@@ -17,5 +17,10 @@ namespace da_pl2_projeto
         public decimal Salario { get; set; }
         public string Posicao { get; set; }
         public int RestauranteId { get; set; }
+
+        public override string ToString()
+        {
+            return Nome;
+        }
     }
 }

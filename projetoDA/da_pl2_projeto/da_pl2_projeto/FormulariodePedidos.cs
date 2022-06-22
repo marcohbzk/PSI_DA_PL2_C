@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,7 +23,7 @@ namespace da_pl2_projeto
         private void FormulariodePedidos_Load(object sender, EventArgs e)
         {
             listBoxItensMenu.DataSource = GereRestauranteContainer.ItensMenu.ToList<ItemMenu>();
-            
+
             List<Pedido> listaPedidos = GereRestauranteContainer.PedidoSet.ToList<Pedido>();
 
 
@@ -40,7 +41,7 @@ namespace da_pl2_projeto
 
 
             IEnumerable<Pedido> PedidosAndando2 = from pedido in listaPedidos2
-                                                 where pedido.Estado.EstadoInt == 1
+                                                  where pedido.Estado.EstadoInt == 1
                                                   where pedido.RestauranteId == FormularioInicial.idRest.Id
                                                   select pedido;
 
@@ -61,42 +62,64 @@ namespace da_pl2_projeto
 
             tempPedido.RestauranteId = FormularioInicial.idRest.Id;
             tempPedido.Restaurante = restaurante;
-            tempPedido.Trabalhador = GetSelectedTrabalhador();
-            tempPedido.Cliente = GetSelectedCliente();
 
-            foreach (ItemMenu item in listBoxItensPedido.Items)
+            if(GetSelectedTrabalhador() == null)
             {
-                tempPedido.ItemMenu.Add(item);
+                MessageBox.Show("Nao selecionou nenhum trabalhador");
+            }
+            else
+            {
+                tempPedido.Trabalhador = GetSelectedTrabalhador();
             }
 
-            tempEstado.EstadoInt = 1;
-       
-            tempPedido.Estado = tempEstado;
-            tempEstado.Pedido.Add(tempPedido);
-
-            GereRestauranteContainer.PedidoSet.Add(tempPedido);
-            GereRestauranteContainer.Estados.Add(tempEstado);
-
-            GereRestauranteContainer.SaveChanges();
-            LerDados();
-
-            List<Pedido> listaPedidos2 = GereRestauranteContainer.PedidoSet.ToList<Pedido>();
-            IEnumerable<Pedido> PedidosAndando2 = from pedido in listaPedidos2
-                                                  where pedido.Estado.EstadoInt == 1
-                                                  where pedido.RestauranteId == FormularioInicial.idRest.Id
-                                                  select pedido;
-
-            foreach (Pedido pedido in PedidosAndando2)
+            if (GetSelectedCliente() == null)
             {
-                if(listBoxPedidosEmProcessamento.Items.Contains(pedido))
+                MessageBox.Show("Nao selecionou nenhum Cliente");
+            }
+            else
+            {
+                tempPedido.Cliente = GetSelectedCliente();
+            }
+
+            if (listBoxItensPedido.Items == null)
+            {
+                MessageBox.Show("Nao selecionou nenhum item do menu");
+            }
+            else
+            {
+                foreach (ItemMenu item in listBoxItensPedido.Items)
                 {
-                   //
+                    tempPedido.ItemMenu.Add(item);
                 }
-                else
+                tempEstado.EstadoInt = 1;
+
+                tempPedido.Estado = tempEstado;
+                tempEstado.Pedido.Add(tempPedido);
+
+                GereRestauranteContainer.PedidoSet.Add(tempPedido);
+                GereRestauranteContainer.Estados.Add(tempEstado);
+
+                GereRestauranteContainer.SaveChanges();
+                LerDados();
+
+                List<Pedido> listaPedidos2 = GereRestauranteContainer.PedidoSet.ToList<Pedido>();
+                IEnumerable<Pedido> PedidosAndando2 = from pedido in listaPedidos2
+                                                      where pedido.Estado.EstadoInt == 1
+                                                      where pedido.RestauranteId == FormularioInicial.idRest.Id
+                                                      select pedido;
+
+                foreach (Pedido pedido in PedidosAndando2)
                 {
-                    listBoxPedidosEmProcessamento.Items.Add(pedido);
+                    if (listBoxPedidosEmProcessamento.Items.Contains(pedido))
+                    {
+                        //
+                    }
+                    else
+                    {
+                        listBoxPedidosEmProcessamento.Items.Add(pedido);
+                    }
+
                 }
-                
             }
         }
 
@@ -195,12 +218,19 @@ namespace da_pl2_projeto
         private void btnAdicionarItemPedido_Click(object sender, EventArgs e)
         {
             var temp = listBoxItensMenu.SelectedItem;
-            listBoxItensPedido.Items.Add(temp);
+            if(temp == null)
+            {
+                MessageBox.Show("Nao selecionou nenhum item do menu");
+            }
+            else
+            {
+                listBoxItensPedido.Items.Add(temp);
+            }
         }
 
         private void btnCancelarPedido_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void FormulariodePedidos_FormClosing(object sender, FormClosingEventArgs e)
@@ -213,12 +243,18 @@ namespace da_pl2_projeto
         private void btnFinalizarPedido_Click(object sender, EventArgs e)
         {
             Pedido pedido = (Pedido)listBoxPedidosEmProcessamento.SelectedItem;
-            pedido.Estado.EstadoInt = 2;
-  
-            GereRestauranteContainer.SaveChanges();
 
-            var temp = listBoxPedidosEmProcessamento.SelectedItem;
-            listBoxPedidosAPagar.Items.Add(temp);
+            if(listBoxPedidosEmProcessamento.SelectedItem == null)
+            {
+                MessageBox.Show("Tem de selecionar um pedido");
+            }
+            else
+            {
+                pedido.Estado.EstadoInt = 2;
+                GereRestauranteContainer.SaveChanges();
+                var temp = listBoxPedidosEmProcessamento.SelectedItem;
+                listBoxPedidosAPagar.Items.Add(temp);
+            }    
         }
 
         private void comboBoxMetodoPagamento_SelectedIndexChanged(object sender, EventArgs e)
@@ -231,37 +267,84 @@ namespace da_pl2_projeto
             Pagamento pagamento = new Pagamento();
             MetodoPagamento metodo = new MetodoPagamento();
             Pedido pedido = (Pedido)listBoxPedidosAPagar.SelectedItem;
-            pedido.Estado.EstadoInt = 3;
 
-            metodo.MetodoDePagamento = comboBoxMetodoPagamento.SelectedItem.ToString();
-            metodo.Ativo = true;
+            if(listBoxPedidosAPagar.SelectedItem == null)
+            {
+                MessageBox.Show("Tem de selecionar um pedido");
+            }
+            else
+            {
+                pedido.Estado.EstadoInt = 3;
 
-            pagamento.Pedido = pedido;
-            pagamento.MetodoPagamento = metodo;
-            pagamento.Valor = Convert.ToInt32(textBox1.Text);
+                if (comboBoxMetodoPagamento.SelectedItem == null)
+                {
+                    MessageBox.Show("Tem de selecionar um metodo de pagamento");
+                }
+                else
+                {
+                    metodo.MetodoDePagamento = comboBoxMetodoPagamento.SelectedItem.ToString();
+                    metodo.Ativo = true;
 
-            metodo.Pagamento.Add(pagamento);
+                    pagamento.Pedido = pedido;
+                    pagamento.MetodoPagamento = metodo;
 
-            GereRestauranteContainer.Pagamentos.Add(pagamento);
-            GereRestauranteContainer.MetodosPagamento.Add(metodo);
+                    if(textBox1.Text == null || textBox1.Text == "")
+                    {
+                        MessageBox.Show("Tem de adicionar um valor ao pagamento");
+                    }
+                    else
+                    {
+                        pagamento.Valor = Convert.ToInt32(textBox1.Text);
 
-            GereRestauranteContainer.SaveChanges();
+                        metodo.Pagamento.Add(pagamento);
+                        GereRestauranteContainer.Pagamentos.Add(pagamento);
+                        GereRestauranteContainer.MetodosPagamento.Add(metodo);
 
-            var temp = listBoxPedidosAPagar.SelectedItem;
-            listBoxPedidos.Items.Add(temp);
+                        GereRestauranteContainer.SaveChanges();
+
+                        var temp = listBoxPedidosAPagar.SelectedItem;
+                        listBoxPedidos.Items.Add(temp);
+                    }
+                }
+            }
         }
 
         private void btnConcluirPedido_Click(object sender, EventArgs e)
         {
-            Pedido pedido = (Pedido)listBoxPedidos.SelectedItem;
-            pedido.Estado.EstadoInt = 4;
-            GereRestauranteContainer.SaveChanges();
-
-            this.Hide();
-            FormularioInicial fi = new FormularioInicial();
-            fi.ShowDialog();
-            this.Show();
-
+            if(listBoxPedidos.SelectedItem == null)
+            {
+                MessageBox.Show("Tem de selecionar um pedido");
+            }
+            else
+            {
+                Pedido pedido = (Pedido)listBoxPedidos.SelectedItem;
+                pedido.Estado.EstadoInt = 4;
+                GereRestauranteContainer.SaveChanges();
+                this.Close();
+            }      
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (listBoxPedidos.SelectedItem == null)
+            {
+                MessageBox.Show("Tem de selecionar um pedido");
+            }
+            else
+            {
+                Pedido pedido = (Pedido)listBoxPedidos.SelectedItem;
+                var txt = " Pedido Nº " + pedido.Id + Environment.NewLine + " Cliente: " + pedido.Cliente.ToString() + Environment.NewLine + " Menu: " + pedido.ItemMenu.ToString() + Environment.NewLine + " Metodo de pagamento: " + pedido.Pagamento.ToString() + Environment.NewLine + " Restaurante: " + pedido.Restaurante.ToString() + Environment.NewLine + " Trabalhador: " + pedido.Trabalhador.ToString() + Environment.NewLine + " Valor Total " + pedido.ValorTotal.ToString();
+                ficheiros(txt);
+
+                this.Close();
+            }
+        }
+
+        public static void ficheiros(string txt)
+        {
+            string path = @"Pedido.txt";
+            File.WriteAllText(path, txt + Environment.NewLine, Encoding.UTF8);
+        }
+        
     }
 }

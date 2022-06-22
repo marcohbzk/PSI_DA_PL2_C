@@ -52,6 +52,7 @@ namespace da_pl2_projeto
             this.btnConcluirPedido = new System.Windows.Forms.Button();
             this.btnCriarPedido = new System.Windows.Forms.Button();
             this.dataGridViewTrabalhadores = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTrabalhadores)).BeginInit();
             this.SuspendLayout();
@@ -298,11 +299,23 @@ namespace da_pl2_projeto
             this.dataGridViewTrabalhadores.Size = new System.Drawing.Size(387, 281);
             this.dataGridViewTrabalhadores.TabIndex = 25;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1395, 627);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(389, 28);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "Exportar Para TXT";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormulariodePedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 653);
+            this.ClientSize = new System.Drawing.Size(1924, 668);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridViewTrabalhadores);
             this.Controls.Add(this.btnCriarPedido);
             this.Controls.Add(this.btnConcluirPedido);
@@ -363,5 +376,6 @@ namespace da_pl2_projeto
         private System.Windows.Forms.Button btnConcluirPedido;
         private System.Windows.Forms.Button btnCriarPedido;
         private System.Windows.Forms.DataGridView dataGridViewTrabalhadores;
+        private System.Windows.Forms.Button button1;
     }
 }

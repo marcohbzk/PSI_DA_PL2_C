@@ -1,0 +1,37 @@
+Morada
+
+public override string ToString()
+        {
+            return Rua + " "+ Cidade + " "+ CodPostal + " "+ Pais;
+        }
+
+------------------------------------//-----------------------------------
+
+Restaurante / categoria / Item menu / Cliente / Trabalhador
+
+ public override string ToString()
+        {
+            return Nome;
+        }
+
+-------------------------------------------//------------------------
+Pedido
+
+public override string ToString()
+        {
+            return Convert.ToString(Id);
+        }
+-------------------------------------------//------------------------
+Metodo de pagamento
+
+public override string ToString()
+        {
+            return MetodoDePagamento;
+        }
+-------------------------------------------//------------------------
+Pagamento
+
+public override string ToString()
+        {
+            return Convert.ToString(MetodoPagamento);
+        }

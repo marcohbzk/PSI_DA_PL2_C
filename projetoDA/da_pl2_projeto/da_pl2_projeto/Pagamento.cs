@@ -21,5 +21,10 @@ namespace da_pl2_projeto
     
         public virtual MetodoPagamento MetodoPagamento { get; set; }
         public virtual Pedido Pedido { get; set; }
+
+        public override string ToString()
+        {
+            return Convert.ToString(MetodoPagamento);
+        }
     }
 }

@@ -36,7 +36,6 @@ namespace da_pl2_projeto
             tempMorada.Cidade = textBoxCidadeRestauranteGlobal.Text;
             tempMorada.CodPostal = textBoxCodPostalRestauranteGlobal.Text;
             tempMorada.Pais = textBoxPaisRestauranteGlobal.Text;
-
             tempRestaurante.Morada = tempMorada;
 
             GereRestauranteContainer.Moradas.Add(tempMorada);
