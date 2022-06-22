@@ -55,7 +55,7 @@ namespace da_pl2_projeto
             // btnRegistarCliente
             // 
             this.btnRegistarCliente.Location = new System.Drawing.Point(11, 325);
-            this.btnRegistarCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegistarCliente.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegistarCliente.Name = "btnRegistarCliente";
             this.btnRegistarCliente.Size = new System.Drawing.Size(89, 30);
             this.btnRegistarCliente.TabIndex = 0;
@@ -66,7 +66,7 @@ namespace da_pl2_projeto
             // btnApagarCliente
             // 
             this.btnApagarCliente.Location = new System.Drawing.Point(197, 325);
-            this.btnApagarCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnApagarCliente.Margin = new System.Windows.Forms.Padding(2);
             this.btnApagarCliente.Name = "btnApagarCliente";
             this.btnApagarCliente.Size = new System.Drawing.Size(89, 30);
             this.btnApagarCliente.TabIndex = 1;
@@ -77,7 +77,7 @@ namespace da_pl2_projeto
             // btnEditarCliente
             // 
             this.btnEditarCliente.Location = new System.Drawing.Point(104, 325);
-            this.btnEditarCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEditarCliente.Margin = new System.Windows.Forms.Padding(2);
             this.btnEditarCliente.Name = "btnEditarCliente";
             this.btnEditarCliente.Size = new System.Drawing.Size(89, 30);
             this.btnEditarCliente.TabIndex = 2;
@@ -93,9 +93,10 @@ namespace da_pl2_projeto
             this.dataGridViewClientes.Name = "dataGridViewClientes";
             this.dataGridViewClientes.ReadOnly = true;
             this.dataGridViewClientes.RowHeadersWidth = 51;
+            this.dataGridViewClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewClientes.Size = new System.Drawing.Size(293, 342);
             this.dataGridViewClientes.TabIndex = 3;
-            this.dataGridViewClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewClientes_CellContentClick);
+            this.dataGridViewClientes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewClientes_CellClick);
             // 
             // labelNomeCliente
             // 
@@ -250,7 +251,7 @@ namespace da_pl2_projeto
             this.Controls.Add(this.btnEditarCliente);
             this.Controls.Add(this.btnApagarCliente);
             this.Controls.Add(this.btnRegistarCliente);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormularioGestaoClientes";
             this.Text = "FormularioGestaoClientes";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormularioGestaoClientes_FormClosing);

@@ -305,7 +305,7 @@ namespace da_pl2_projeto
             this.Controls.Add(this.labelTrabalhadores);
             this.Controls.Add(this.labelCliente);
             this.Controls.Add(this.dataGridViewClientes);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormulariodePedidos";
             this.Text = "FormulariodePedidos ";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormulariodePedidos_FormClosing);

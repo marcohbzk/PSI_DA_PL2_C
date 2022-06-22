@@ -26,24 +26,65 @@ namespace da_pl2_projeto
             fp.Show();
         }
 
+        //Assim que o formulário abrir vai gerar os dados de sessões anteriores
+        private void FormularioGestaoClientes_Load(object sender, EventArgs e)
+        {
+            LerDados();
+        }
+
         private void btnRegistarCliente_Click(object sender, EventArgs e)
         {
-            Morada tempMorada = new Morada();
+                if (
+                    string.IsNullOrWhiteSpace(textBoxNomeCliente.Text) ||
+                    string.IsNullOrWhiteSpace(textBoxNifCliente.Text) ||
+                    string.IsNullOrWhiteSpace(textBoxTelefoneCliente.Text) ||
+                    string.IsNullOrWhiteSpace(textBoxRuaCliente.Text) ||
+                    string.IsNullOrWhiteSpace(textBoxCidadeCliente.Text) ||
+                    string.IsNullOrWhiteSpace(textBoxCodPostalCliente.Text) ||
+                    string.IsNullOrWhiteSpace(textBoxPaisCliente.Text) ||
+                    string.IsNullOrWhiteSpace(textBoxTotalGastoCliente.Text)
+                   )
+                {
+                    MessageBox.Show("Preencha os Campos Obrigatórios!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    Morada tempMorada = new Morada();
+                    Cliente tempCliente = new Cliente();
+
+                    tempCliente.Nome = textBoxNomeCliente.Text;
+                    tempCliente.NumContribuinte = Convert.ToInt32(textBoxNifCliente.Text);
+                    tempCliente.Telemovel = Convert.ToInt32(textBoxTelefoneCliente.Text);
+                    tempMorada.Rua = textBoxRuaCliente.Text;
+                    tempMorada.Cidade = textBoxCidadeCliente.Text;
+                    tempMorada.CodPostal = textBoxCodPostalCliente.Text;
+                    tempMorada.Pais = textBoxPaisCliente.Text;
+                    tempCliente.TotalGasto = Convert.ToDecimal(textBoxTotalGastoCliente.Text);
+                    tempCliente.Morada = tempMorada;
+
+                    //Adiciona o cliente e a morada à base de dados e atualiza a DataGridView
+                    GereRestauranteContainer.Moradas.Add(tempMorada);
+                    GereRestauranteContainer.Pessoas.Add(tempCliente);
+                    GereRestauranteContainer.SaveChanges();
+                    LerDados();
+                }              
+        }
+
+        private void btnEditarCliente_Click(object sender, EventArgs e)
+        {
             Cliente tempCliente = new Cliente();
+
+            tempCliente = dataGridViewClientes.SelectedRows[0].DataBoundItem as Cliente;
 
             tempCliente.Nome = textBoxNomeCliente.Text;
             tempCliente.NumContribuinte = Convert.ToInt32(textBoxNifCliente.Text);
             tempCliente.Telemovel = Convert.ToInt32(textBoxTelefoneCliente.Text);
-            tempMorada.Rua = textBoxRuaCliente.Text;
-            tempMorada.Cidade = textBoxCidadeCliente.Text;
-            tempMorada.CodPostal = textBoxCodPostalCliente.Text;
-            tempMorada.Pais = textBoxPaisCliente.Text;
+            tempCliente.Morada.Rua = textBoxRuaCliente.Text;
+            tempCliente.Morada.Cidade = textBoxCidadeCliente.Text;
+            tempCliente.Morada.CodPostal = textBoxCodPostalCliente.Text;
+            tempCliente.Morada.Pais = textBoxPaisCliente.Text;
             tempCliente.TotalGasto = Convert.ToDecimal(textBoxTotalGastoCliente.Text);
-            tempCliente.Morada = tempMorada;
 
-            //Adiciona o cliente e a morada à base de dados e atualiza a DataGridView
-            GereRestauranteContainer.Moradas.Add(tempMorada);
-            GereRestauranteContainer.Pessoas.Add(tempCliente);
             GereRestauranteContainer.SaveChanges();
             LerDados();
         }
@@ -64,12 +105,6 @@ namespace da_pl2_projeto
             Cliente data = GereRestauranteContainer.Pessoas.First(c => c.Id == id) as Cliente;
 
             return data;
-        }
-
-        //Assim que o formulário abrir vai gerar os dados de sessões anteriores
-        private void FormularioGestaoClientes_Load(object sender, EventArgs e)
-        {
-            LerDados();
         }
 
         private void LerDados()
@@ -114,14 +149,23 @@ namespace da_pl2_projeto
             }
         }
 
-        private void dataGridViewClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridViewClientes_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            Cliente tempCliente = new Cliente();
 
-        }
+            tempCliente = dataGridViewClientes.SelectedRows[0].DataBoundItem as Cliente;
 
-        private void btnEditarCliente_Click(object sender, EventArgs e)
-        {
+            textBoxNomeCliente.Text = tempCliente.Nome;
+            textBoxNifCliente.Text = Convert.ToString(tempCliente.NumContribuinte);
+            textBoxTelefoneCliente.Text = Convert.ToString(tempCliente.Telemovel);
+            textBoxRuaCliente.Text = tempCliente.Morada.Rua;
+            textBoxCidadeCliente.Text = tempCliente.Morada.Cidade;
+            textBoxCodPostalCliente.Text = tempCliente.Morada.CodPostal;
+            textBoxPaisCliente.Text = tempCliente.Morada.Pais;
+            textBoxTotalGastoCliente.Text = Convert.ToString(tempCliente.TotalGasto);
 
+            GereRestauranteContainer.SaveChanges();
+            LerDados();
         }
     }
 }

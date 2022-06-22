@@ -21,6 +21,7 @@ namespace da_pl2_projeto
         private void FormulariodePedidos_Load(object sender, EventArgs e)
         {
             listBoxItensMenu.DataSource = GereRestauranteContainer.ItensMenu.ToList<ItemMenu>();
+            listBoxPedidosEmProcessamento.DataSource = GereRestauranteContainer.PedidoSet.ToList<Pedido>();
             LerDados();
         }
 
@@ -163,5 +164,6 @@ namespace da_pl2_projeto
             FormularioInicial fi = new FormularioInicial();
             fi.Show();
         }
+
     }
 }
