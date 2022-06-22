@@ -55,137 +55,128 @@ namespace da_pl2_projeto
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(28, 202);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(21, 164);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 17);
+            this.label2.Size = new System.Drawing.Size(42, 13);
             this.label2.TabIndex = 39;
             this.label2.Text = "Salario:";
             // 
             // textBoxSalarioTrabalhador
             // 
-            this.textBoxSalarioTrabalhador.Location = new System.Drawing.Point(138, 202);
-            this.textBoxSalarioTrabalhador.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxSalarioTrabalhador.Location = new System.Drawing.Point(104, 164);
             this.textBoxSalarioTrabalhador.Name = "textBoxSalarioTrabalhador";
-            this.textBoxSalarioTrabalhador.Size = new System.Drawing.Size(245, 22);
+            this.textBoxSalarioTrabalhador.Size = new System.Drawing.Size(185, 20);
             this.textBoxSalarioTrabalhador.TabIndex = 38;
             // 
             // textBoxPosicaoTrabalhador
             // 
-            this.textBoxPosicaoTrabalhador.Location = new System.Drawing.Point(138, 167);
-            this.textBoxPosicaoTrabalhador.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxPosicaoTrabalhador.Location = new System.Drawing.Point(104, 136);
             this.textBoxPosicaoTrabalhador.Name = "textBoxPosicaoTrabalhador";
-            this.textBoxPosicaoTrabalhador.Size = new System.Drawing.Size(245, 22);
+            this.textBoxPosicaoTrabalhador.Size = new System.Drawing.Size(185, 20);
             this.textBoxPosicaoTrabalhador.TabIndex = 37;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 165);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(16, 134);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 17);
+            this.label1.Size = new System.Drawing.Size(48, 13);
             this.label1.TabIndex = 36;
             this.label1.Text = "Posição:";
             // 
             // textBoxCodPostalTrabalhador
             // 
-            this.textBoxCodPostalTrabalhador.Location = new System.Drawing.Point(138, 137);
-            this.textBoxCodPostalTrabalhador.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxCodPostalTrabalhador.Location = new System.Drawing.Point(104, 111);
             this.textBoxCodPostalTrabalhador.Name = "textBoxCodPostalTrabalhador";
-            this.textBoxCodPostalTrabalhador.Size = new System.Drawing.Size(245, 22);
+            this.textBoxCodPostalTrabalhador.Size = new System.Drawing.Size(185, 20);
             this.textBoxCodPostalTrabalhador.TabIndex = 35;
             // 
             // textBoxCidadeTrabalhador
             // 
-            this.textBoxCidadeTrabalhador.Location = new System.Drawing.Point(138, 107);
-            this.textBoxCidadeTrabalhador.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxCidadeTrabalhador.Location = new System.Drawing.Point(104, 87);
             this.textBoxCidadeTrabalhador.Name = "textBoxCidadeTrabalhador";
-            this.textBoxCidadeTrabalhador.Size = new System.Drawing.Size(245, 22);
+            this.textBoxCidadeTrabalhador.Size = new System.Drawing.Size(185, 20);
             this.textBoxCidadeTrabalhador.TabIndex = 34;
             // 
             // textBoxRuaTrabalhador
             // 
-            this.textBoxRuaTrabalhador.Location = new System.Drawing.Point(138, 65);
-            this.textBoxRuaTrabalhador.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRuaTrabalhador.Location = new System.Drawing.Point(104, 53);
             this.textBoxRuaTrabalhador.Name = "textBoxRuaTrabalhador";
-            this.textBoxRuaTrabalhador.Size = new System.Drawing.Size(245, 22);
+            this.textBoxRuaTrabalhador.Size = new System.Drawing.Size(185, 20);
             this.textBoxRuaTrabalhador.TabIndex = 33;
             // 
             // textBoxNomeTrabalhador
             // 
-            this.textBoxNomeTrabalhador.Location = new System.Drawing.Point(140, 25);
-            this.textBoxNomeTrabalhador.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxNomeTrabalhador.Location = new System.Drawing.Point(105, 20);
             this.textBoxNomeTrabalhador.Name = "textBoxNomeTrabalhador";
-            this.textBoxNomeTrabalhador.Size = new System.Drawing.Size(245, 22);
+            this.textBoxNomeTrabalhador.Size = new System.Drawing.Size(185, 20);
             this.textBoxNomeTrabalhador.TabIndex = 30;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(17, 134);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(13, 109);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 17);
+            this.label6.Size = new System.Drawing.Size(64, 13);
             this.label6.TabIndex = 29;
             this.label6.Text = "Cod. Postal:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(28, 107);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(21, 87);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 17);
+            this.label5.Size = new System.Drawing.Size(43, 13);
             this.label5.TabIndex = 28;
             this.label5.Text = "Cidade:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(46, 70);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(34, 57);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 17);
+            this.label4.Size = new System.Drawing.Size(30, 13);
             this.label4.TabIndex = 27;
             this.label4.Text = "Rua:";
             // 
             // labelNomeCliente
             // 
             this.labelNomeCliente.AutoSize = true;
-            this.labelNomeCliente.Location = new System.Drawing.Point(35, 30);
-            this.labelNomeCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelNomeCliente.Location = new System.Drawing.Point(26, 24);
             this.labelNomeCliente.Name = "labelNomeCliente";
-            this.labelNomeCliente.Size = new System.Drawing.Size(49, 17);
+            this.labelNomeCliente.Size = new System.Drawing.Size(38, 13);
             this.labelNomeCliente.TabIndex = 24;
             this.labelNomeCliente.Text = "Nome:";
             // 
             // dataGridViewRestaurantes
             // 
             this.dataGridViewRestaurantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewRestaurantes.Location = new System.Drawing.Point(394, 14);
-            this.dataGridViewRestaurantes.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewRestaurantes.Location = new System.Drawing.Point(296, 11);
+            this.dataGridViewRestaurantes.MultiSelect = false;
             this.dataGridViewRestaurantes.Name = "dataGridViewRestaurantes";
             this.dataGridViewRestaurantes.RowHeadersWidth = 51;
-            this.dataGridViewRestaurantes.Size = new System.Drawing.Size(391, 421);
+            this.dataGridViewRestaurantes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewRestaurantes.Size = new System.Drawing.Size(293, 342);
             this.dataGridViewRestaurantes.TabIndex = 23;
+            this.dataGridViewRestaurantes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTrabalhador_CellClick);
             // 
             // btnEditarTrabalhador
             // 
-            this.btnEditarTrabalhador.Location = new System.Drawing.Point(140, 388);
-            this.btnEditarTrabalhador.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEditarTrabalhador.Location = new System.Drawing.Point(105, 315);
+            this.btnEditarTrabalhador.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEditarTrabalhador.Name = "btnEditarTrabalhador";
-            this.btnEditarTrabalhador.Size = new System.Drawing.Size(119, 48);
+            this.btnEditarTrabalhador.Size = new System.Drawing.Size(89, 39);
             this.btnEditarTrabalhador.TabIndex = 22;
             this.btnEditarTrabalhador.Text = "Update Trabalhador";
             this.btnEditarTrabalhador.UseVisualStyleBackColor = true;
+            this.btnEditarTrabalhador.Click += new System.EventHandler(this.btnEditarTrabalhador_Click);
             // 
             // btnApagarTrabalhador
             // 
-            this.btnApagarTrabalhador.Location = new System.Drawing.Point(264, 388);
-            this.btnApagarTrabalhador.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnApagarTrabalhador.Location = new System.Drawing.Point(198, 315);
+            this.btnApagarTrabalhador.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnApagarTrabalhador.Name = "btnApagarTrabalhador";
-            this.btnApagarTrabalhador.Size = new System.Drawing.Size(119, 48);
+            this.btnApagarTrabalhador.Size = new System.Drawing.Size(89, 39);
             this.btnApagarTrabalhador.TabIndex = 21;
             this.btnApagarTrabalhador.Text = "Apagar Trabalhador";
             this.btnApagarTrabalhador.UseVisualStyleBackColor = true;
@@ -193,10 +184,10 @@ namespace da_pl2_projeto
             // 
             // btnRegistarTrabalhador
             // 
-            this.btnRegistarTrabalhador.Location = new System.Drawing.Point(16, 388);
-            this.btnRegistarTrabalhador.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRegistarTrabalhador.Location = new System.Drawing.Point(12, 315);
+            this.btnRegistarTrabalhador.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRegistarTrabalhador.Name = "btnRegistarTrabalhador";
-            this.btnRegistarTrabalhador.Size = new System.Drawing.Size(119, 48);
+            this.btnRegistarTrabalhador.Size = new System.Drawing.Size(89, 39);
             this.btnRegistarTrabalhador.TabIndex = 20;
             this.btnRegistarTrabalhador.Text = "Registar Trabalhador";
             this.btnRegistarTrabalhador.UseVisualStyleBackColor = true;
@@ -205,44 +196,40 @@ namespace da_pl2_projeto
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(28, 239);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(21, 194);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 17);
+            this.label3.Size = new System.Drawing.Size(59, 13);
             this.label3.TabIndex = 40;
             this.label3.Text = "Telemovel:";
             // 
             // textBoxTelemovelTrabalhador
             // 
-            this.textBoxTelemovelTrabalhador.Location = new System.Drawing.Point(138, 239);
-            this.textBoxTelemovelTrabalhador.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxTelemovelTrabalhador.Location = new System.Drawing.Point(104, 194);
             this.textBoxTelemovelTrabalhador.Name = "textBoxTelemovelTrabalhador";
-            this.textBoxTelemovelTrabalhador.Size = new System.Drawing.Size(245, 22);
+            this.textBoxTelemovelTrabalhador.Size = new System.Drawing.Size(185, 20);
             this.textBoxTelemovelTrabalhador.TabIndex = 41;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(28, 270);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(21, 219);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(39, 17);
+            this.label7.Size = new System.Drawing.Size(30, 13);
             this.label7.TabIndex = 42;
             this.label7.Text = "Pais:";
             // 
             // textBoxPaisTrabalhador
             // 
-            this.textBoxPaisTrabalhador.Location = new System.Drawing.Point(138, 270);
-            this.textBoxPaisTrabalhador.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxPaisTrabalhador.Location = new System.Drawing.Point(104, 219);
             this.textBoxPaisTrabalhador.Name = "textBoxPaisTrabalhador";
-            this.textBoxPaisTrabalhador.Size = new System.Drawing.Size(245, 22);
+            this.textBoxPaisTrabalhador.Size = new System.Drawing.Size(185, 20);
             this.textBoxPaisTrabalhador.TabIndex = 43;
             // 
             // FormularioIndividualRestaurante
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.textBoxPaisTrabalhador);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBoxTelemovelTrabalhador);
@@ -263,7 +250,7 @@ namespace da_pl2_projeto
             this.Controls.Add(this.btnEditarTrabalhador);
             this.Controls.Add(this.btnApagarTrabalhador);
             this.Controls.Add(this.btnRegistarTrabalhador);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormularioIndividualRestaurante";
             this.Text = "FormularioIndividualRestaurante";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormularioIndividualRestaurante_FormClosing);

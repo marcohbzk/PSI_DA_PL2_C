@@ -27,34 +27,76 @@ namespace da_pl2_projeto
         }
         private void btnRegistarRestauranteGlobal_Click(object sender, EventArgs e)
         {
-            Morada tempMorada = new Morada();
+            if (
+                string.IsNullOrWhiteSpace(textBoxNomeRestauranteGlobal.Text) ||
+                string.IsNullOrWhiteSpace(textBoxRuaRestauranteGlobal.Text) ||
+                string.IsNullOrWhiteSpace(textBoxCidadeRestauranteGlobal.Text) ||
+                string.IsNullOrWhiteSpace(textBoxCodPostalRestauranteGlobal.Text) ||
+                string.IsNullOrWhiteSpace(textBoxPaisRestauranteGlobal.Text)
+               )
+            {
+                MessageBox.Show("Preencha os Campos Obrigatórios!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                Morada tempMorada = new Morada();
+                Restaurante tempRestaurante = new Restaurante();
+
+                tempRestaurante.Nome = textBoxNomeRestauranteGlobal.Text;
+                nomeRes = textBoxNomeRestauranteGlobal.Text;
+                tempMorada.Rua = textBoxRuaRestauranteGlobal.Text;
+                tempMorada.Cidade = textBoxCidadeRestauranteGlobal.Text;
+                tempMorada.CodPostal = textBoxCodPostalRestauranteGlobal.Text;
+                tempMorada.Pais = textBoxPaisRestauranteGlobal.Text;
+
+                tempRestaurante.Morada = tempMorada;
+
+                GereRestauranteContainer.Moradas.Add(tempMorada);
+                GereRestauranteContainer.Restaurantes.Add(tempRestaurante);
+                GereRestauranteContainer.SaveChanges();
+                LerDados();
+            }
+        }
+        private void btnEditarRestauranteGlobal_Click(object sender, EventArgs e)
+        {
             Restaurante tempRestaurante = new Restaurante();
 
-            tempRestaurante.Nome = textBoxNomeRestauranteGlobal.Text;
-            nomeRes = textBoxNomeRestauranteGlobal.Text;
-            tempMorada.Rua = textBoxRuaRestauranteGlobal.Text;
-            tempMorada.Cidade = textBoxCidadeRestauranteGlobal.Text;
-            tempMorada.CodPostal = textBoxCodPostalRestauranteGlobal.Text;
-            tempMorada.Pais = textBoxPaisRestauranteGlobal.Text;
-            tempRestaurante.Morada = tempMorada;
+            tempRestaurante = dataGridViewRestaurantes.SelectedRows[0].DataBoundItem as Restaurante;
 
-            GereRestauranteContainer.Moradas.Add(tempMorada);
-            GereRestauranteContainer.Restaurantes.Add(tempRestaurante);
+            tempRestaurante.Nome = textBoxNomeRestauranteGlobal.Text;
+            tempRestaurante.Morada.Rua = textBoxRuaRestauranteGlobal.Text;
+            tempRestaurante.Morada.Cidade = textBoxCidadeRestauranteGlobal.Text;
+            tempRestaurante.Morada.CodPostal = textBoxCodPostalRestauranteGlobal.Text;
+            tempRestaurante.Morada.Pais = textBoxPaisRestauranteGlobal.Text;
+
+            GereRestauranteContainer.SaveChanges();
+            LerDados();
+        }
+        private void btnApagarRestauranteGlobal_Click(object sender, EventArgs e)
+        {
+            Restaurante userdata = GetSelectedRestaurante();
+
+            GereRestauranteContainer.Restaurantes.Remove(userdata);
+
+            GereRestauranteContainer.SaveChanges();
+            LerDados();
+        }
+        private void dataGridViewClientes_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Restaurante tempRestaurante = new Restaurante();
+
+            tempRestaurante = dataGridViewRestaurantes.SelectedRows[0].DataBoundItem as Restaurante;
+
+            textBoxNomeRestauranteGlobal.Text = tempRestaurante.Nome;
+            textBoxRuaRestauranteGlobal.Text = tempRestaurante.Morada.Rua;
+            textBoxCidadeRestauranteGlobal.Text = tempRestaurante.Morada.Cidade;
+            textBoxCodPostalRestauranteGlobal.Text = tempRestaurante.Morada.CodPostal;
+            textBoxPaisRestauranteGlobal.Text = tempRestaurante.Morada.Pais;
+
             GereRestauranteContainer.SaveChanges();
             LerDados();
         }
 
-        private void textBoxCodPostalRestauranteGlobal_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Pais_Click(object sender, EventArgs e)
-        {
-
-        }
-
-       
         private void LerDados()
         {
             List<Restaurante> restaurantes = new List<Restaurante>();
@@ -95,21 +137,6 @@ namespace da_pl2_projeto
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void btnApagarRestauranteGlobal_Click(object sender, EventArgs e)
-        {
-            Restaurante userdata = GetSelectedRestaurante();
-
-            GereRestauranteContainer.Restaurantes.Remove(userdata);
-
-            GereRestauranteContainer.SaveChanges();
-            LerDados();
-        }
-
         private Restaurante GetSelectedRestaurante()
         {
             int row = dataGridViewRestaurantes.SelectedCells[0].RowIndex;
@@ -125,5 +152,7 @@ namespace da_pl2_projeto
         {
             LerDados();
         }
+
+        
     }
 }

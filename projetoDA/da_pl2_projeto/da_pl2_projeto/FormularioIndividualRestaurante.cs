@@ -25,26 +25,78 @@ namespace da_pl2_projeto
 
         private void btnRegistarTrabalhador_Click(object sender, EventArgs e)
         {
-            Morada tempMorada = new Morada();
+            if (
+                string.IsNullOrWhiteSpace(textBoxNomeTrabalhador.Text) ||
+                string.IsNullOrWhiteSpace(textBoxPosicaoTrabalhador.Text) ||
+                string.IsNullOrWhiteSpace(textBoxSalarioTrabalhador.Text) ||
+                string.IsNullOrWhiteSpace(textBoxTelemovelTrabalhador.Text) ||
+                string.IsNullOrWhiteSpace(textBoxRuaTrabalhador.Text) ||
+                string.IsNullOrWhiteSpace(textBoxCidadeTrabalhador.Text) ||
+                string.IsNullOrWhiteSpace(textBoxCodPostalTrabalhador.Text) ||
+                string.IsNullOrWhiteSpace(textBoxPaisTrabalhador.Text)
+                )
+            {
+                MessageBox.Show("Preencha os Campos Obrigatórios!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                Morada tempMorada = new Morada();
+                Trabalhador tempTrabalhador = new Trabalhador();
+
+                tempTrabalhador.Nome = textBoxNomeTrabalhador.Text;
+                tempTrabalhador.Posicao = textBoxPosicaoTrabalhador.Text;
+                tempTrabalhador.Salario = Convert.ToDecimal(textBoxSalarioTrabalhador.Text);
+                tempTrabalhador.Telemovel = Convert.ToInt32(textBoxTelemovelTrabalhador.Text);
+
+                tempTrabalhador.RestauranteId = FormularioInicial.idRest.Id;
+
+                tempMorada.Rua = textBoxRuaTrabalhador.Text;
+                tempMorada.Cidade = textBoxCidadeTrabalhador.Text;
+                tempMorada.CodPostal = textBoxCodPostalTrabalhador.Text;
+                tempMorada.Pais = textBoxPaisTrabalhador.Text;
+
+                tempTrabalhador.Morada = tempMorada;
+
+                //Adiciona o cliente e a morada à base de dados e atualiza a DataGridView
+                GereRestauranteContainer.Moradas.Add(tempMorada);
+                GereRestauranteContainer.Pessoas.Add(tempTrabalhador);
+                GereRestauranteContainer.SaveChanges();
+                LerDados();
+            }
+        }
+        private void btnEditarTrabalhador_Click(object sender, EventArgs e)
+        {
             Trabalhador tempTrabalhador = new Trabalhador();
 
+            tempTrabalhador = dataGridViewRestaurantes.SelectedRows[0].DataBoundItem as Trabalhador;
+
             tempTrabalhador.Nome = textBoxNomeTrabalhador.Text;
+            tempTrabalhador.Morada.Rua = textBoxRuaTrabalhador.Text;
+            tempTrabalhador.Morada.Cidade = textBoxCidadeTrabalhador.Text;
+            tempTrabalhador.Morada.CodPostal = textBoxCodPostalTrabalhador.Text;
             tempTrabalhador.Posicao = textBoxPosicaoTrabalhador.Text;
             tempTrabalhador.Salario = Convert.ToDecimal(textBoxSalarioTrabalhador.Text);
             tempTrabalhador.Telemovel = Convert.ToInt32(textBoxTelemovelTrabalhador.Text);
+            tempTrabalhador.Morada.Pais = textBoxPaisTrabalhador.Text;
 
-            tempTrabalhador.RestauranteId = FormularioInicial.idRest.Id;
+            GereRestauranteContainer.SaveChanges();
+            LerDados();
+        }
+        private void dataGridViewTrabalhador_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Trabalhador tempTrabalhador = new Trabalhador();
 
-            tempMorada.Rua = textBoxRuaTrabalhador.Text;
-            tempMorada.Cidade = textBoxCidadeTrabalhador.Text;
-            tempMorada.CodPostal = textBoxCodPostalTrabalhador.Text;
-            tempMorada.Pais = textBoxPaisTrabalhador.Text;
+            tempTrabalhador = dataGridViewRestaurantes.SelectedRows[0].DataBoundItem as Trabalhador;
 
-            tempTrabalhador.Morada = tempMorada;
+            textBoxNomeTrabalhador.Text = tempTrabalhador.Nome;
+            textBoxRuaTrabalhador.Text = tempTrabalhador.Morada.Rua;
+            textBoxCidadeTrabalhador.Text = tempTrabalhador.Morada.Cidade;
+            textBoxCodPostalTrabalhador.Text = tempTrabalhador.Morada.CodPostal;
+            textBoxPosicaoTrabalhador.Text = tempTrabalhador.Posicao;
+            textBoxSalarioTrabalhador.Text = Convert.ToString(tempTrabalhador.Salario);
+            textBoxTelemovelTrabalhador.Text = Convert.ToString(tempTrabalhador.Telemovel);
+            textBoxPaisTrabalhador.Text = tempTrabalhador.Morada.Pais;
 
-            //Adiciona o cliente e a morada à base de dados e atualiza a DataGridView
-            GereRestauranteContainer.Moradas.Add(tempMorada);
-            GereRestauranteContainer.Pessoas.Add(tempTrabalhador);
             GereRestauranteContainer.SaveChanges();
             LerDados();
         }
@@ -121,6 +173,8 @@ namespace da_pl2_projeto
 
             return data;
         }
+
+
     }
 }
 

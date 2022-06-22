@@ -152,3 +152,4 @@ C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_p
 C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.exe
 C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.pdb
 C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.ResolveComReference.cache
+D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.ResolveComReference.cache

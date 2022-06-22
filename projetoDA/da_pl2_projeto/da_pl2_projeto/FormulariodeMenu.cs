@@ -20,30 +20,82 @@ namespace da_pl2_projeto
 
         private void btnRegistarMenu_Click(object sender, EventArgs e)
         {
+            if (
+                string.IsNullOrWhiteSpace(textBoxCategoria.Text) ||
+                string.IsNullOrWhiteSpace(textBoxNome.Text) ||
+                string.IsNullOrWhiteSpace(textBoxIngredientes.Text) ||
+                string.IsNullOrWhiteSpace(textBoxPreco.Text) ||
+                string.IsNullOrWhiteSpace(comboBoxAtivo.Text)
+              )
+            {
+                MessageBox.Show("Preencha os Campos Obrigatórios!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                ItemMenu tempItemMenu = new ItemMenu();
+                Categoria tempCategoria = new Categoria();
+                Restaurante restaurante = GereRestauranteContainer.Restaurantes.Find(FormularioInicial.idRest.Id);
+
+                //tempItemMenu.Fotografia = new byte[2];
+
+                tempCategoria.Nome = textBoxCategoria.Text;
+                tempCategoria.Ativo = comboBoxAtivo.SelectedItem.ToString();
+                tempItemMenu.Nome = textBoxNome.Text;
+                tempItemMenu.Ingredientes = textBoxIngredientes.Text;
+                tempItemMenu.Preco = Convert.ToDecimal(textBoxPreco.Text);
+                tempItemMenu.Ativo = comboBoxAtivo.SelectedItem.ToString();
+                tempItemMenu.Categoria = tempCategoria;
+
+                tempItemMenu.Restaurante.Add(restaurante);
+
+                GereRestauranteContainer.Categorias.Add(tempCategoria);
+                GereRestauranteContainer.ItensMenu.Add(tempItemMenu);
+
+                GereRestauranteContainer.SaveChanges();
+                LerDados();
+            }
+        }
+
+        private void btnEditaraMenu_Click(object sender, EventArgs e)
+        {
             ItemMenu tempItemMenu = new ItemMenu();
-            Categoria tempCategoria = new Categoria();
-            Restaurante restaurante = GereRestauranteContainer.Restaurantes.Find(FormularioInicial.idRest.Id);
 
-            //tempItemMenu.Fotografia = new byte[2];
-            
-            tempCategoria.Nome = TextBoxNomeCategoria.Text;
-            tempCategoria.Ativo = comboBox1.SelectedItem.ToString();
+            tempItemMenu = dataGridViewMenu.SelectedRows[0].DataBoundItem as ItemMenu;
 
-            tempItemMenu.Restaurante.Add(restaurante);
-            tempItemMenu.Nome = TextBoxNome.Text;
+            tempItemMenu.Nome = textBoxNome.Text;
             tempItemMenu.Ingredientes = textBoxIngredientes.Text;
+            tempItemMenu.Categoria.Nome = textBoxCategoria.Text;
             tempItemMenu.Preco = Convert.ToDecimal(textBoxPreco.Text);
-            tempItemMenu.Ativo = comboBox1.SelectedItem.ToString();
+            tempItemMenu.Ativo = Convert.ToString(comboBoxAtivo.SelectedItem);
 
-            tempItemMenu.Categoria = tempCategoria;
-
-            GereRestauranteContainer.Categorias.Add(tempCategoria);
-            GereRestauranteContainer.ItensMenu.Add(tempItemMenu);
-            
             GereRestauranteContainer.SaveChanges();
             LerDados();
         }
+        private void btnApagarMenu_Click(object sender, EventArgs e)
+        {
+            ItemMenu userdata = GetSelectedItemMenu();
 
+            GereRestauranteContainer.ItensMenu.Remove(userdata);
+
+            GereRestauranteContainer.SaveChanges();
+            LerDados();
+        }
+        private void dataGridViewItemMenu_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            ItemMenu tempItemMenu = new ItemMenu();
+
+            tempItemMenu = dataGridViewMenu.SelectedRows[0].DataBoundItem as ItemMenu;
+
+            textBoxNome.Text = tempItemMenu.Nome;
+            textBoxIngredientes.Text = tempItemMenu.Ingredientes;
+            textBoxCategoria.Text = tempItemMenu.Categoria.Nome;
+            textBoxPreco.Text = Convert.ToString(tempItemMenu.Preco);
+            comboBoxAtivo.SelectedItem = tempItemMenu.Ativo;
+
+
+            GereRestauranteContainer.SaveChanges();
+            LerDados();
+        }
         private void LerDados()
         {
             List<ItemMenu> itemMenus = new List<ItemMenu>();
@@ -94,15 +146,7 @@ namespace da_pl2_projeto
             fp.Show();
         }
 
-        private void btnApagarMenu_Click(object sender, EventArgs e)
-        {
-            ItemMenu userdata = GetSelectedItemMenu();
-
-            GereRestauranteContainer.ItensMenu.Remove(userdata);
-
-            GereRestauranteContainer.SaveChanges();
-            LerDados();
-        }
+    
         private ItemMenu GetSelectedItemMenu()
         {
             int row = dataGridViewMenu.SelectedCells[0].RowIndex;
