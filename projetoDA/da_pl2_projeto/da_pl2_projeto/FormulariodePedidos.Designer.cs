@@ -51,7 +51,6 @@ namespace da_pl2_projeto
             this.btnFinalizarPedido = new System.Windows.Forms.Button();
             this.btnAdicionarItemPedido = new System.Windows.Forms.Button();
             this.btnConcluirPedido = new System.Windows.Forms.Button();
-            this.btnRemoverMetodo = new System.Windows.Forms.Button();
             this.btnCriarPedido = new System.Windows.Forms.Button();
             this.dataGridViewTrabalhadores = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientes)).BeginInit();
@@ -217,7 +216,7 @@ namespace da_pl2_projeto
             this.listBoxPedidos.FormattingEnabled = true;
             this.listBoxPedidos.Location = new System.Drawing.Point(1049, 337);
             this.listBoxPedidos.Name = "listBoxPedidos";
-            this.listBoxPedidos.Size = new System.Drawing.Size(290, 108);
+            this.listBoxPedidos.Size = new System.Drawing.Size(290, 134);
             this.listBoxPedidos.TabIndex = 18;
             // 
             // btnCancelarPedido
@@ -251,21 +250,12 @@ namespace da_pl2_projeto
             // 
             // btnConcluirPedido
             // 
-            this.btnConcluirPedido.Location = new System.Drawing.Point(1047, 451);
+            this.btnConcluirPedido.Location = new System.Drawing.Point(1047, 480);
             this.btnConcluirPedido.Name = "btnConcluirPedido";
             this.btnConcluirPedido.Size = new System.Drawing.Size(292, 23);
             this.btnConcluirPedido.TabIndex = 22;
             this.btnConcluirPedido.Text = "Concluir";
             this.btnConcluirPedido.UseVisualStyleBackColor = true;
-            // 
-            // btnRemoverMetodo
-            // 
-            this.btnRemoverMetodo.Location = new System.Drawing.Point(1047, 480);
-            this.btnRemoverMetodo.Name = "btnRemoverMetodo";
-            this.btnRemoverMetodo.Size = new System.Drawing.Size(292, 23);
-            this.btnRemoverMetodo.TabIndex = 23;
-            this.btnRemoverMetodo.Text = "Remover Metodo";
-            this.btnRemoverMetodo.UseVisualStyleBackColor = true;
             // 
             // btnCriarPedido
             // 
@@ -293,7 +283,6 @@ namespace da_pl2_projeto
             this.ClientSize = new System.Drawing.Size(1386, 511);
             this.Controls.Add(this.dataGridViewTrabalhadores);
             this.Controls.Add(this.btnCriarPedido);
-            this.Controls.Add(this.btnRemoverMetodo);
             this.Controls.Add(this.btnConcluirPedido);
             this.Controls.Add(this.btnAdicionarItemPedido);
             this.Controls.Add(this.btnFinalizarPedido);
@@ -352,7 +341,6 @@ namespace da_pl2_projeto
         private System.Windows.Forms.Button btnFinalizarPedido;
         private System.Windows.Forms.Button btnAdicionarItemPedido;
         private System.Windows.Forms.Button btnConcluirPedido;
-        private System.Windows.Forms.Button btnRemoverMetodo;
         private System.Windows.Forms.Button btnCriarPedido;
         private System.Windows.Forms.DataGridView dataGridViewTrabalhadores;
     }

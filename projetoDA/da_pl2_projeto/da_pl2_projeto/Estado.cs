@@ -21,7 +21,7 @@ namespace da_pl2_projeto
         }
     
         public int Id { get; set; }
-        public bool EstadoBool { get; set; }
+        public int EstadoInt { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Pedido> Pedido { get; set; }

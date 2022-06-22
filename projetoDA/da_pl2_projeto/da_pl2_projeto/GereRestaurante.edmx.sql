@@ -2,8 +2,8 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 06/21/2022 16:44:14
--- Generated from EDMX file: D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\GereRestaurante.edmx
+-- Date Created: 06/22/2022 18:04:44
+-- Generated from EDMX file: D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\GereRestaurante.edmx
 -- --------------------------------------------------
 CREATE DATABASE [RestGest];
 SET QUOTED_IDENTIFIER OFF;
@@ -125,7 +125,7 @@ GO
 -- Creating table 'Pagamentos'
 CREATE TABLE [dbo].[Pagamentos] (
     [Id] int IDENTITY(1,1) NOT NULL,
-    [Valor] decimal(7,7)  NOT NULL,
+    [Valor] decimal(7,2)  NOT NULL,
     [MetodoPagamentoId] int  NOT NULL,
     [PedidoId] int  NOT NULL
 );
@@ -134,7 +134,7 @@ GO
 -- Creating table 'PedidoSet'
 CREATE TABLE [dbo].[PedidoSet] (
     [Id] int IDENTITY(1,1) NOT NULL,
-    [ValorTotal] decimal(18,0)  NOT NULL,
+    [ValorTotal] decimal(7,2)  NOT NULL,
     [EstadoId] int  NOT NULL,
     [ClienteId] int  NOT NULL,
     [TrabalhadorId] int  NOT NULL,
@@ -145,7 +145,7 @@ GO
 -- Creating table 'Estados'
 CREATE TABLE [dbo].[Estados] (
     [Id] int IDENTITY(1,1) NOT NULL,
-    [EstadoString] nvarchar(max)  NOT NULL
+    [EstadoInt] int  NOT NULL
 );
 GO
 
@@ -182,7 +182,7 @@ CREATE TABLE [dbo].[ItensMenu] (
     [Nome] nvarchar(max)  NOT NULL,
     [Fotografia] varbinary(max)  NULL,
     [Ingredientes] nvarchar(max)  NOT NULL,
-    [Preco] decimal(18,0)  NOT NULL,
+    [Preco] decimal(7,2)  NOT NULL,
     [Ativo] nvarchar(max)  NOT NULL,
     [CategoriaId] int  NOT NULL
 );
@@ -198,7 +198,7 @@ GO
 
 -- Creating table 'Pessoas_Cliente'
 CREATE TABLE [dbo].[Pessoas_Cliente] (
-    [TotalGasto] decimal(18,0)  NOT NULL,
+    [TotalGasto] decimal(7,2)  NOT NULL,
     [NumContribuinte] int  NOT NULL,
     [Id] int  NOT NULL
 );
@@ -206,7 +206,7 @@ GO
 
 -- Creating table 'Pessoas_Trabalhador'
 CREATE TABLE [dbo].[Pessoas_Trabalhador] (
-    [Salario] decimal(18,0)  NOT NULL,
+    [Salario] decimal(7,2)  NOT NULL,
     [Posicao] nvarchar(max)  NOT NULL,
     [RestauranteId] int  NOT NULL,
     [Id] int  NOT NULL

@@ -18,10 +18,5 @@ namespace da_pl2_projeto
         public string Nome { get; set; }
     
         public virtual Morada Morada { get; set; }
-
-        public override string ToString()
-        {
-            return Nome;
-        }
     }
 }

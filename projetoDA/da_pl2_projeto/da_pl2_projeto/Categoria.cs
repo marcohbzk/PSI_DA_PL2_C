@@ -26,10 +26,5 @@ namespace da_pl2_projeto
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ItemMenu> ItemMenu { get; set; }
-
-        public override string ToString()
-        {
-            return Nome;
-        }
     }
 }

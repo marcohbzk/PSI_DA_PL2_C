@@ -35,8 +35,8 @@
     <EntitySetMapping Name="Estados">
       <EntityTypeMapping TypeName="IsTypeOf(GereRestaurante.Estado)">
         <MappingFragment StoreEntitySet="Estados">
-          <ScalarProperty Name="EstadoBool" ColumnName="EstadoBool" />
           <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EstadoInt" ColumnName="EstadoInt" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

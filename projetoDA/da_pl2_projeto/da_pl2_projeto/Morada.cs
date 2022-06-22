@@ -22,10 +22,5 @@ namespace da_pl2_projeto
     
         public virtual Pessoa Pessoa { get; set; }
         public virtual Restaurante Restaurante { get; set; }
-
-        public override string ToString()
-        {
-            return Rua + " " + Cidade + " " + CodPostal + " " + Pais;
-        }
     }
 }
