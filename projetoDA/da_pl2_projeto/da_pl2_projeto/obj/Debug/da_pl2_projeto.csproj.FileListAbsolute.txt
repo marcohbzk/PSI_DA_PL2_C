@@ -106,3 +106,26 @@ D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_pr
 D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.pdb
 D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioInicial.resources
 C:\Users\barba\Desktop\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioInicial.resources
+D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\da_pl2_projeto.exe.config
+D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\da_pl2_projeto.exe
+D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\da_pl2_projeto.pdb
+D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.dll
+D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.SqlServer.dll
+D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.xml
+D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.SqlServer.xml
+D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.AssemblyReference.cache
+D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.SuggestedBindingRedirects.cache
+D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormulariodePedidos.resources
+D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormulariodeMenu.resources
+D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioGestaoClientes.resources
+D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioIndividualRestaurante.resources
+D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioInicial.resources
+D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioGestaoGlobalRestaurantes.resources
+D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioPrincipal2.resources
+D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioSelecaoRestaurante.resources
+D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.Properties.Resources.resources
+D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.GenerateResource.cache
+D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.CoreCompileInputs.cache
+D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.CopyComplete
+D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.exe
+D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.pdb
