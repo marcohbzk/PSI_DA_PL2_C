@@ -129,3 +129,25 @@ D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_pro
 D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.CopyComplete
 D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.exe
 D:\Escola\2º Semestre\Dev de Apps\Github\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.pdb
+C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\da_pl2_projeto.exe.config
+C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\da_pl2_projeto.exe
+C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\da_pl2_projeto.pdb
+C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.dll
+C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.xml
+C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.AssemblyReference.cache
+C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormulariodePedidos.resources
+C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormulariodeMenu.resources
+C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioGestaoClientes.resources
+C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioIndividualRestaurante.resources
+C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioInicial.resources
+C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioGestaoGlobalRestaurantes.resources
+C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioPrincipal2.resources
+C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioSelecaoRestaurante.resources
+C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.Properties.Resources.resources
+C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.GenerateResource.cache
+C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.CoreCompileInputs.cache
+C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.CopyComplete
+C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.exe
+C:\Users\barba\Desktop\DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.pdb

@@ -21,6 +21,19 @@ namespace da_pl2_projeto
         private void FormulariodePedidos_Load(object sender, EventArgs e)
         {
             listBoxItensMenu.DataSource = GereRestauranteContainer.ItensMenu.ToList<ItemMenu>();
+            listBoxPedidosEmProcessamento.DataSource = GereRestauranteContainer.PedidoSet.ToList<Pedido>();
+            List<Pedido> listaPedidos = GereRestauranteContainer.PedidoSet.ToList<Pedido>();
+
+
+            IEnumerable<Pedido> PedidosAndando = from pedido in listaPedidos
+                                                 where pedido.Estado.EstadoInt == 2
+                                                 select pedido;
+
+            foreach (Pedido pedido in PedidosAndando)
+            {
+                listBoxPedidosAPagar.Items.Add(pedido);
+            }
+
             LerDados();
         }
 
@@ -41,11 +54,11 @@ namespace da_pl2_projeto
                 tempPedido.ItemMenu.Add(item);
             }
 
+            tempEstado.EstadoInt = 1;
+       
             tempPedido.Estado = tempEstado;
-
-            tempEstado.Id = 1;
             tempEstado.Pedido.Add(tempPedido);
-           
+
             GereRestauranteContainer.PedidoSet.Add(tempPedido);
             GereRestauranteContainer.Estados.Add(tempEstado);
 
@@ -162,6 +175,54 @@ namespace da_pl2_projeto
             this.Hide();
             FormularioInicial fi = new FormularioInicial();
             fi.Show();
+        }
+
+        private void btnFinalizarPedido_Click(object sender, EventArgs e)
+        {
+            Pedido pedido = (Pedido)listBoxPedidosEmProcessamento.SelectedItem;
+            pedido.Estado.EstadoInt = 2;
+  
+            GereRestauranteContainer.SaveChanges();
+
+            var temp = listBoxPedidosEmProcessamento.SelectedItem;
+            listBoxPedidosAPagar.Items.Add(temp);
+        }
+
+        private void comboBoxMetodoPagamento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAdicionarValor_Click(object sender, EventArgs e)
+        {
+            Pagamento pagamento = new Pagamento();
+            MetodoPagamento metodo = new MetodoPagamento();
+            Pedido pedido = (Pedido)listBoxPedidosAPagar.SelectedItem;
+            pedido.Estado.EstadoInt = 3;
+
+            metodo.MetodoDePagamento = comboBoxMetodoPagamento.SelectedItem.ToString();
+            metodo.Ativo = true;
+
+            pagamento.Pedido = pedido;
+            pagamento.MetodoPagamento = metodo;
+            pagamento.Valor = Convert.ToInt32(textBox1.Text);
+
+            metodo.Pagamento.Add(pagamento);
+
+            GereRestauranteContainer.Pagamentos.Add(pagamento);
+            GereRestauranteContainer.MetodosPagamento.Add(metodo);
+
+            GereRestauranteContainer.SaveChanges();
+
+            var temp = listBoxPedidosAPagar.SelectedItem;
+            listBoxPedidos.Items.Add(temp);
+        }
+
+        private void btnConcluirPedido_Click(object sender, EventArgs e)
+        {
+            Pedido pedido = (Pedido)listBoxPedidos.SelectedItem;
+            pedido.Estado.EstadoInt = 4;
+            GereRestauranteContainer.SaveChanges();
         }
     }
 }
