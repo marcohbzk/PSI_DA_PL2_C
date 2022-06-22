@@ -60,7 +60,7 @@ namespace da_pl2_projeto
             // 
             this.dataGridViewClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewClientes.Location = new System.Drawing.Point(35, 31);
-            this.dataGridViewClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridViewClientes.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewClientes.Name = "dataGridViewClientes";
             this.dataGridViewClientes.RowHeadersWidth = 51;
             this.dataGridViewClientes.Size = new System.Drawing.Size(387, 281);
@@ -91,7 +91,7 @@ namespace da_pl2_projeto
             this.listBoxItensMenu.FormattingEnabled = true;
             this.listBoxItensMenu.ItemHeight = 16;
             this.listBoxItensMenu.Location = new System.Drawing.Point(475, 31);
-            this.listBoxItensMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBoxItensMenu.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxItensMenu.Name = "listBoxItensMenu";
             this.listBoxItensMenu.Size = new System.Drawing.Size(385, 244);
             this.listBoxItensMenu.TabIndex = 4;
@@ -101,7 +101,7 @@ namespace da_pl2_projeto
             this.listBoxItensPedido.FormattingEnabled = true;
             this.listBoxItensPedido.ItemHeight = 16;
             this.listBoxItensPedido.Location = new System.Drawing.Point(475, 338);
-            this.listBoxItensPedido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBoxItensPedido.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxItensPedido.Name = "listBoxItensPedido";
             this.listBoxItensPedido.Size = new System.Drawing.Size(385, 244);
             this.listBoxItensPedido.TabIndex = 5;
@@ -131,7 +131,7 @@ namespace da_pl2_projeto
             this.listBoxPedidosEmProcessamento.FormattingEnabled = true;
             this.listBoxPedidosEmProcessamento.ItemHeight = 16;
             this.listBoxPedidosEmProcessamento.Location = new System.Drawing.Point(919, 31);
-            this.listBoxPedidosEmProcessamento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBoxPedidosEmProcessamento.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxPedidosEmProcessamento.Name = "listBoxPedidosEmProcessamento";
             this.listBoxPedidosEmProcessamento.Size = new System.Drawing.Size(385, 516);
             this.listBoxPedidosEmProcessamento.TabIndex = 8;
@@ -151,7 +151,7 @@ namespace da_pl2_projeto
             this.listBoxPedidosAPagar.FormattingEnabled = true;
             this.listBoxPedidosAPagar.ItemHeight = 16;
             this.listBoxPedidosAPagar.Location = new System.Drawing.Point(1399, 31);
-            this.listBoxPedidosAPagar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBoxPedidosAPagar.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxPedidosAPagar.Name = "listBoxPedidosAPagar";
             this.listBoxPedidosAPagar.Size = new System.Drawing.Size(385, 212);
             this.listBoxPedidosAPagar.TabIndex = 10;
@@ -188,7 +188,7 @@ namespace da_pl2_projeto
             "Cartão de Crédito",
             "Cartão de Débito"});
             this.comboBoxMetodoPagamento.Location = new System.Drawing.Point(1399, 267);
-            this.comboBoxMetodoPagamento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxMetodoPagamento.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxMetodoPagamento.Name = "comboBoxMetodoPagamento";
             this.comboBoxMetodoPagamento.Size = new System.Drawing.Size(385, 24);
             this.comboBoxMetodoPagamento.TabIndex = 13;
@@ -207,7 +207,7 @@ namespace da_pl2_projeto
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(1399, 316);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(385, 22);
             this.textBox1.TabIndex = 16;
@@ -215,7 +215,7 @@ namespace da_pl2_projeto
             // btnAdicionarValor
             // 
             this.btnAdicionarValor.Location = new System.Drawing.Point(1396, 368);
-            this.btnAdicionarValor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdicionarValor.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdicionarValor.Name = "btnAdicionarValor";
             this.btnAdicionarValor.Size = new System.Drawing.Size(389, 28);
             this.btnAdicionarValor.TabIndex = 17;
@@ -228,7 +228,7 @@ namespace da_pl2_projeto
             this.listBoxPedidos.FormattingEnabled = true;
             this.listBoxPedidos.ItemHeight = 16;
             this.listBoxPedidos.Location = new System.Drawing.Point(1399, 415);
-            this.listBoxPedidos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBoxPedidos.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxPedidos.Name = "listBoxPedidos";
             this.listBoxPedidos.Size = new System.Drawing.Size(385, 164);
             this.listBoxPedidos.TabIndex = 18;
@@ -236,7 +236,7 @@ namespace da_pl2_projeto
             // btnCancelarPedido
             // 
             this.btnCancelarPedido.Location = new System.Drawing.Point(919, 555);
-            this.btnCancelarPedido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelarPedido.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelarPedido.Name = "btnCancelarPedido";
             this.btnCancelarPedido.Size = new System.Drawing.Size(387, 28);
             this.btnCancelarPedido.TabIndex = 19;
@@ -247,7 +247,7 @@ namespace da_pl2_projeto
             // btnFinalizarPedido
             // 
             this.btnFinalizarPedido.Location = new System.Drawing.Point(919, 591);
-            this.btnFinalizarPedido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFinalizarPedido.Margin = new System.Windows.Forms.Padding(4);
             this.btnFinalizarPedido.Name = "btnFinalizarPedido";
             this.btnFinalizarPedido.Size = new System.Drawing.Size(387, 28);
             this.btnFinalizarPedido.TabIndex = 20;
@@ -258,7 +258,7 @@ namespace da_pl2_projeto
             // btnAdicionarItemPedido
             // 
             this.btnAdicionarItemPedido.Location = new System.Drawing.Point(475, 283);
-            this.btnAdicionarItemPedido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdicionarItemPedido.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdicionarItemPedido.Name = "btnAdicionarItemPedido";
             this.btnAdicionarItemPedido.Size = new System.Drawing.Size(387, 28);
             this.btnAdicionarItemPedido.TabIndex = 21;
@@ -269,7 +269,7 @@ namespace da_pl2_projeto
             // btnConcluirPedido
             // 
             this.btnConcluirPedido.Location = new System.Drawing.Point(1396, 591);
-            this.btnConcluirPedido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnConcluirPedido.Margin = new System.Windows.Forms.Padding(4);
             this.btnConcluirPedido.Name = "btnConcluirPedido";
             this.btnConcluirPedido.Size = new System.Drawing.Size(389, 28);
             this.btnConcluirPedido.TabIndex = 22;
@@ -280,7 +280,7 @@ namespace da_pl2_projeto
             // btnCriarPedido
             // 
             this.btnCriarPedido.Location = new System.Drawing.Point(475, 591);
-            this.btnCriarPedido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCriarPedido.Margin = new System.Windows.Forms.Padding(4);
             this.btnCriarPedido.Name = "btnCriarPedido";
             this.btnCriarPedido.Size = new System.Drawing.Size(387, 28);
             this.btnCriarPedido.TabIndex = 24;
@@ -292,7 +292,7 @@ namespace da_pl2_projeto
             // 
             this.dataGridViewTrabalhadores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewTrabalhadores.Location = new System.Drawing.Point(35, 338);
-            this.dataGridViewTrabalhadores.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridViewTrabalhadores.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewTrabalhadores.Name = "dataGridViewTrabalhadores";
             this.dataGridViewTrabalhadores.RowHeadersWidth = 51;
             this.dataGridViewTrabalhadores.Size = new System.Drawing.Size(387, 281);
@@ -302,7 +302,7 @@ namespace da_pl2_projeto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1827, 653);
+            this.ClientSize = new System.Drawing.Size(1924, 653);
             this.Controls.Add(this.dataGridViewTrabalhadores);
             this.Controls.Add(this.btnCriarPedido);
             this.Controls.Add(this.btnConcluirPedido);

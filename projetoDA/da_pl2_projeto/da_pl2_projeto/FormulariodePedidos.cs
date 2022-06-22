@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace da_pl2_projeto
 {
     public partial class FormulariodePedidos : Form
@@ -21,17 +22,31 @@ namespace da_pl2_projeto
         private void FormulariodePedidos_Load(object sender, EventArgs e)
         {
             listBoxItensMenu.DataSource = GereRestauranteContainer.ItensMenu.ToList<ItemMenu>();
-            listBoxPedidosEmProcessamento.DataSource = GereRestauranteContainer.PedidoSet.ToList<Pedido>();
+            
             List<Pedido> listaPedidos = GereRestauranteContainer.PedidoSet.ToList<Pedido>();
 
 
             IEnumerable<Pedido> PedidosAndando = from pedido in listaPedidos
                                                  where pedido.Estado.EstadoInt == 2
+                                                 where pedido.RestauranteId == FormularioInicial.idRest.Id
                                                  select pedido;
 
             foreach (Pedido pedido in PedidosAndando)
             {
                 listBoxPedidosAPagar.Items.Add(pedido);
+            }
+
+            List<Pedido> listaPedidos2 = GereRestauranteContainer.PedidoSet.ToList<Pedido>();
+
+
+            IEnumerable<Pedido> PedidosAndando2 = from pedido in listaPedidos2
+                                                 where pedido.Estado.EstadoInt == 1
+                                                  where pedido.RestauranteId == FormularioInicial.idRest.Id
+                                                  select pedido;
+
+            foreach (Pedido pedido in PedidosAndando2)
+            {
+                listBoxPedidosEmProcessamento.Items.Add(pedido);
             }
 
             LerDados();
@@ -64,7 +79,25 @@ namespace da_pl2_projeto
 
             GereRestauranteContainer.SaveChanges();
             LerDados();
-            listBoxPedidosEmProcessamento.DataSource = GereRestauranteContainer.PedidoSet.ToList<Pedido>();
+
+            List<Pedido> listaPedidos2 = GereRestauranteContainer.PedidoSet.ToList<Pedido>();
+            IEnumerable<Pedido> PedidosAndando2 = from pedido in listaPedidos2
+                                                  where pedido.Estado.EstadoInt == 1
+                                                  where pedido.RestauranteId == FormularioInicial.idRest.Id
+                                                  select pedido;
+
+            foreach (Pedido pedido in PedidosAndando2)
+            {
+                if(listBoxPedidosEmProcessamento.Items.Contains(pedido))
+                {
+                   //
+                }
+                else
+                {
+                    listBoxPedidosEmProcessamento.Items.Add(pedido);
+                }
+                
+            }
         }
 
         private void LerDados()
@@ -223,6 +256,12 @@ namespace da_pl2_projeto
             Pedido pedido = (Pedido)listBoxPedidos.SelectedItem;
             pedido.Estado.EstadoInt = 4;
             GereRestauranteContainer.SaveChanges();
+
+            this.Hide();
+            FormularioInicial fi = new FormularioInicial();
+            fi.ShowDialog();
+            this.Show();
+
         }
     }
 }
