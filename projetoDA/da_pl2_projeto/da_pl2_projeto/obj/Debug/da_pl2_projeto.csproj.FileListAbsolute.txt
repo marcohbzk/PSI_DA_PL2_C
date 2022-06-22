@@ -1,0 +1,108 @@
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\da_pl2_projeto.exe.config
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\da_pl2_projeto.exe
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\da_pl2_projeto.pdb
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.dll
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.xml
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.AssemblyReference.cache
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormulariodeMenu.resources
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioGestaoClientes.resources
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioPrincipal.resources
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.Properties.Resources.resources
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.GenerateResource.cache
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.CoreCompileInputs.cache
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.CopyComplete
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.exe
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.pdb
+D:\Escola\2º Semestre\Dev de Apps\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\da_pl2_projeto.exe.config
+D:\Escola\2º Semestre\Dev de Apps\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\da_pl2_projeto.exe
+D:\Escola\2º Semestre\Dev de Apps\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\da_pl2_projeto.pdb
+D:\Escola\2º Semestre\Dev de Apps\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.dll
+D:\Escola\2º Semestre\Dev de Apps\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.SqlServer.dll
+D:\Escola\2º Semestre\Dev de Apps\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.xml
+D:\Escola\2º Semestre\Dev de Apps\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.SqlServer.xml
+D:\Escola\2º Semestre\Dev de Apps\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.AssemblyReference.cache
+D:\Escola\2º Semestre\Dev de Apps\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.SuggestedBindingRedirects.cache
+D:\Escola\2º Semestre\Dev de Apps\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormulariodeMenu.resources
+D:\Escola\2º Semestre\Dev de Apps\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioGestaoClientes.resources
+D:\Escola\2º Semestre\Dev de Apps\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioPrincipal.resources
+D:\Escola\2º Semestre\Dev de Apps\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioGestaoGlobalRestaurantes.resources
+D:\Escola\2º Semestre\Dev de Apps\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.Properties.Resources.resources
+D:\Escola\2º Semestre\Dev de Apps\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.GenerateResource.cache
+D:\Escola\2º Semestre\Dev de Apps\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.CoreCompileInputs.cache
+D:\Escola\2º Semestre\Dev de Apps\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.CopyComplete
+D:\Escola\2º Semestre\Dev de Apps\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.exe
+D:\Escola\2º Semestre\Dev de Apps\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.pdb
+D:\Escola\2º Semestre\Dev de Apps\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormulariodePedidos.resources
+D:\Escola\2º Semestre\Dev de Apps\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioIndividualRestaurante.resources
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.SuggestedBindingRedirects.cache
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormulariodePedidos.resources
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioIndividualRestaurante.resources
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioGestaoGlobalRestaurantes.resources
+C:\Users\barba\Desktop\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.AssemblyReference.cache
+C:\Users\barba\Desktop\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormulariodePedidos.resources
+C:\Users\barba\Desktop\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormulariodeMenu.resources
+C:\Users\barba\Desktop\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioGestaoClientes.resources
+C:\Users\barba\Desktop\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioIndividualRestaurante.resources
+C:\Users\barba\Desktop\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioGestaoGlobalRestaurantes.resources
+C:\Users\barba\Desktop\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.Properties.Resources.resources
+C:\Users\barba\Desktop\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.GenerateResource.cache
+C:\Users\barba\Desktop\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.CoreCompileInputs.cache
+C:\Users\barba\Desktop\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.exe
+C:\Users\barba\Desktop\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.pdb
+C:\Users\barba\Desktop\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\da_pl2_projeto.exe.config
+C:\Users\barba\Desktop\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\da_pl2_projeto.exe
+C:\Users\barba\Desktop\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\da_pl2_projeto.pdb
+C:\Users\barba\Desktop\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.dll
+C:\Users\barba\Desktop\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\barba\Desktop\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.xml
+C:\Users\barba\Desktop\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\barba\Desktop\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.CopyComplete
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.AssemblyReference.cache
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.SuggestedBindingRedirects.cache
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormulariodePedidos.resources
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormulariodeMenu.resources
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioGestaoClientes.resources
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioIndividualRestaurante.resources
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioPrincipal.resources
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioGestaoGlobalRestaurantes.resources
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.Properties.Resources.resources
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.GenerateResource.cache
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.CoreCompileInputs.cache
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.exe
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.pdb
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\da_pl2_projeto.exe.config
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\da_pl2_projeto.exe
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\da_pl2_projeto.pdb
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.dll
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.xml
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\markm\Desktop\Escola\Semestre2\Desenvolvimento de Aplicações\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.CopyComplete
+C:\Users\barba\Desktop\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioPrincipal2.resources
+C:\Users\barba\Desktop\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioSelecaoRestaurante.resources
+D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\da_pl2_projeto.exe.config
+D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\da_pl2_projeto.exe
+D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\da_pl2_projeto.pdb
+D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.dll
+D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.SqlServer.dll
+D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.xml
+D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\bin\Debug\EntityFramework.SqlServer.xml
+D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.AssemblyReference.cache
+D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.SuggestedBindingRedirects.cache
+D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormulariodePedidos.resources
+D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormulariodeMenu.resources
+D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioGestaoClientes.resources
+D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioIndividualRestaurante.resources
+D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioGestaoGlobalRestaurantes.resources
+D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioPrincipal2.resources
+D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioSelecaoRestaurante.resources
+D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.Properties.Resources.resources
+D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.GenerateResource.cache
+D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.CoreCompileInputs.cache
+D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.csproj.CopyComplete
+D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.exe
+D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.pdb
+D:\Escola\2º Semestre\Dev de Apps\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioInicial.resources
+C:\Users\barba\Desktop\Projeto DA\projetoDA\da_pl2_projeto\da_pl2_projeto\obj\Debug\da_pl2_projeto.FormularioInicial.resources

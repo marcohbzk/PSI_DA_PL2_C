@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FF925006-ADA7-47E0-9A08-8FBDAC72C4A9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>da_pl2_projeto</RootNamespace>
+    <AssemblyName>da_pl2_projeto</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Categoria.cs">
+      <DependentUpon>GereRestaurante.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.cs">
+      <DependentUpon>GereRestaurante.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Estado.cs">
+      <DependentUpon>GereRestaurante.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioSelecaoRestaurante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioSelecaoRestaurante.Designer.cs">
+      <DependentUpon>FormularioSelecaoRestaurante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioPrincipal2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioPrincipal2.Designer.cs">
+      <DependentUpon>FormularioPrincipal2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariodePedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariodePedidos.Designer.cs">
+      <DependentUpon>FormulariodePedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariodeMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariodeMenu.Designer.cs">
+      <DependentUpon>FormulariodeMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioIndividualRestaurante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioIndividualRestaurante.Designer.cs">
+      <DependentUpon>FormularioIndividualRestaurante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioGestaoGlobalRestaurantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioGestaoGlobalRestaurantes.Designer.cs">
+      <DependentUpon>FormularioGestaoGlobalRestaurantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioInicial.Designer.cs">
+      <DependentUpon>FormularioInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioGestaoClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioGestaoClientes.Designer.cs">
+      <DependentUpon>FormularioGestaoClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GereRestaurante.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GereRestaurante.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GereRestaurante.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GereRestaurante.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GereRestaurante.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GereRestaurante.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ItemMenu.cs">
+      <DependentUpon>GereRestaurante.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetodoPagamento.cs">
+      <DependentUpon>GereRestaurante.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Morada.cs">
+      <DependentUpon>GereRestaurante.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pagamento.cs">
+      <DependentUpon>GereRestaurante.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pedido.cs">
+      <DependentUpon>GereRestaurante.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pessoa.cs">
+      <DependentUpon>GereRestaurante.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Restaurante.cs">
+      <DependentUpon>GereRestaurante.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Trabalhador.cs">
+      <DependentUpon>GereRestaurante.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormulariodePedidos.resx">
+      <DependentUpon>FormulariodePedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariodeMenu.resx">
+      <DependentUpon>FormulariodeMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioGestaoClientes.resx">
+      <DependentUpon>FormularioGestaoClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioIndividualRestaurante.resx">
+      <DependentUpon>FormularioIndividualRestaurante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioInicial.resx">
+      <DependentUpon>FormularioInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioGestaoGlobalRestaurantes.resx">
+      <DependentUpon>FormularioGestaoGlobalRestaurantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioPrincipal2.resx">
+      <DependentUpon>FormularioPrincipal2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioSelecaoRestaurante.resx">
+      <DependentUpon>FormularioSelecaoRestaurante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EntityDeploy Include="GereRestaurante.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GereRestaurante.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="GereRestaurante.edmx.diagram">
+      <DependentUpon>GereRestaurante.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GereRestaurante.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GereRestaurante.Context.cs</LastGenOutput>
+      <DependentUpon>GereRestaurante.edmx</DependentUpon>
+    </Content>
+    <Content Include="GereRestaurante.edmx.sql" />
+    <Content Include="GereRestaurante.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GereRestaurante.cs</LastGenOutput>
+      <DependentUpon>GereRestaurante.edmx</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

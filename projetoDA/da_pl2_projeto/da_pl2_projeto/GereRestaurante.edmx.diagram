@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="45a394153c6a4629bcbe03d01eb02467" Name="Diagram1" ZoomLevel="85" >
+        <EntityTypeShape EntityType="GereRestaurante.MetodoPagamento" Width="1.5" PointX="2.375" PointY="8.375" />
+        <EntityTypeShape EntityType="GereRestaurante.Pagamento" Width="1.5" PointX="2.25" PointY="5.5" />
+        <AssociationConnector Association="GereRestaurante.MetodoPagamentoPagamento" />
+        <EntityTypeShape EntityType="GereRestaurante.Pedido" Width="1.5" PointX="4.375" PointY="5.5" />
+        <AssociationConnector Association="GereRestaurante.PagamentoPedido" />
+        <EntityTypeShape EntityType="GereRestaurante.Estado" Width="1.5" PointX="6.625" PointY="5.5" />
+        <AssociationConnector Association="GereRestaurante.PedidoEstado" />
+        <EntityTypeShape EntityType="GereRestaurante.Pessoa" Width="1.5" PointX="2.25" PointY="0.5" />
+        <EntityTypeShape EntityType="GereRestaurante.Cliente" Width="1.5" PointX="2.375" PointY="3.125" />
+        <InheritanceConnector EntityType="GereRestaurante.Cliente" />
+        <EntityTypeShape EntityType="GereRestaurante.Trabalhador" Width="1.5" PointX="4.5" PointY="2" />
+        <InheritanceConnector EntityType="GereRestaurante.Trabalhador" />
+        <AssociationConnector Association="GereRestaurante.PedidoCliente" />
+        <AssociationConnector Association="GereRestaurante.TrabalhadorPedido" />
+        <EntityTypeShape EntityType="GereRestaurante.Morada" Width="1.5" PointX="6.375" PointY="0.5" />
+        <AssociationConnector Association="GereRestaurante.MoradaPessoa" />
+        <EntityTypeShape EntityType="GereRestaurante.Restaurante" Width="1.5" PointX="10.125" PointY="3.125" />
+        <AssociationConnector Association="GereRestaurante.RestauranteTrabalhador" />
+        <AssociationConnector Association="GereRestaurante.RestaurantePedido" />
+        <AssociationConnector Association="GereRestaurante.RestauranteMorada" />
+        <EntityTypeShape EntityType="GereRestaurante.ItemMenu" Width="1.5" PointX="10.75" PointY="6.625" />
+        <AssociationConnector Association="GereRestaurante.ItemMenuRestaurante" />
+        <AssociationConnector Association="GereRestaurante.ItemMenuPedido" />
+        <EntityTypeShape EntityType="GereRestaurante.Categoria" Width="1.5" PointX="7.75" PointY="8.25" />
+        <AssociationConnector Association="GereRestaurante.CategoriaItemMenu" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
