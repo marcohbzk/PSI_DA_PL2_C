@@ -59,6 +59,7 @@ namespace da_pl2_projeto
             Estado tempEstado = new Estado();
 
             Restaurante restaurante = GereRestauranteContainer.Restaurantes.Find(FormularioInicial.idRest.Id);
+           
 
             tempPedido.RestauranteId = FormularioInicial.idRest.Id;
             tempPedido.Restaurante = restaurante;
@@ -91,8 +92,9 @@ namespace da_pl2_projeto
                 {
                     tempPedido.ItemMenu.Add(item);
                 }
-                tempEstado.EstadoInt = 1;
 
+                tempEstado.EstadoInt = 1;
+                
                 tempPedido.Estado = tempEstado;
                 tempEstado.Pedido.Add(tempPedido);
 
@@ -287,6 +289,7 @@ namespace da_pl2_projeto
 
                     pagamento.Pedido = pedido;
                     pagamento.MetodoPagamento = metodo;
+                    
 
                     if(textBox1.Text == null || textBox1.Text == "")
                     {
@@ -295,8 +298,10 @@ namespace da_pl2_projeto
                     else
                     {
                         pagamento.Valor = Convert.ToInt32(textBox1.Text);
-
+                        pedido.ValorTotal = Convert.ToInt32(textBox1.Text);
                         metodo.Pagamento.Add(pagamento);
+                        pedido.Pagamento.Add(pagamento);
+                     
                         GereRestauranteContainer.Pagamentos.Add(pagamento);
                         GereRestauranteContainer.MetodosPagamento.Add(metodo);
 
@@ -333,7 +338,7 @@ namespace da_pl2_projeto
             else
             {
                 Pedido pedido = (Pedido)listBoxPedidos.SelectedItem;
-                var txt = " Pedido Nº " + pedido.Id + Environment.NewLine + " Cliente: " + pedido.Cliente.ToString() + Environment.NewLine + " Menu: " + pedido.ItemMenu.ToString() + Environment.NewLine + " Metodo de pagamento: " + pedido.Pagamento.ToString() + Environment.NewLine + " Restaurante: " + pedido.Restaurante.ToString() + Environment.NewLine + " Trabalhador: " + pedido.Trabalhador.ToString() + Environment.NewLine + " Valor Total " + pedido.ValorTotal.ToString();
+                var txt = " Pedido Nº " + pedido.Id + Environment.NewLine + " Cliente: " + pedido.Cliente.ToString() + Environment.NewLine + " Menu: " + pedido.ItemMenu.ToString() + Environment.NewLine + " Metodo de pagamento: " + pedido.Pagamento.ToString() + Environment.NewLine + " Restaurante: " + pedido.Restaurante.ToString() + Environment.NewLine + " Trabalhador: " + pedido.Trabalhador.ToString() + Environment.NewLine + " Valor Total: " + pedido.ValorTotal.ToString();
                 ficheiros(txt);
 
                 this.Close();

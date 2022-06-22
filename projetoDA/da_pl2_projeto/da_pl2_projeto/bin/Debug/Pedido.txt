@@ -1,7 +1,7 @@
-﻿ Pedido Nº 8018
+﻿ Pedido Nº 9013
  Cliente: Joao Jesus
  Menu: System.Collections.Generic.HashSet`1[da_pl2_projeto.ItemMenu]
  Metodo de pagamento: System.Collections.Generic.HashSet`1[da_pl2_projeto.Pagamento]
  Restaurante: Burger King
  Trabalhador: Pedro Santos
- Valor Total 0
+ Valor Total: 10
